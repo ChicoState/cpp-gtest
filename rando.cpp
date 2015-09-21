@@ -17,9 +17,12 @@ bool Rando::shouldWorry(bool childASmile, bool childBSmile, bool childCSmile)
 /**
  * Determines if first or second are evenly divisible by the other.
 **/
-bool Rando::isDivisibleBy(int first, int second)
+bool Rando::isDivisbleBy(int first, int second)
 {
-	return false;
+	if(first % second == 0)
+		return true;
+	else
+		return false;
 }
 
 /**
@@ -29,7 +32,14 @@ bool Rando::isDivisibleBy(int first, int second)
 **/
 bool Rando::isPrime(int num)
 {
-	return true;
+	if(num <= 1)
+        return false;
+    else if (num <= 3)
+        return true;
+	else if(num % 2 == 0 || num % 3 == 0)
+		return false;
+	else
+		return true;
 }
 
 /**
@@ -37,6 +47,9 @@ bool Rando::isPrime(int num)
  * that is closest to zero without actually being zero.
 **/
 int Rando::nearestToZero(int a, int b)
-{
-	return 0;
+{	
+	if(a > b)
+		return b;
+	else
+		return a;
 }
