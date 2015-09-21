@@ -17,7 +17,7 @@ bool Rando::shouldWorry(bool childASmile, bool childBSmile, bool childCSmile)
 /**
  * Determines if first or second are evenly divisible by the other.
 **/
-bool Rando::isDivisbleBy(int first, int second)
+bool Rando::isDivisibleBy(int first, int second)
 {
 	return false;
 }
