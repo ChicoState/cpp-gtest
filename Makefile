@@ -45,9 +45,9 @@ gtest_main.a : gtest-all.o gtest_main.o
 rando.o : rando.cpp rando.h $(GTEST_HEADERS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c rando.cpp
 
-RandoTest.o : randoTest.cpp \
+randoTest.o : randoTest.cpp \
                      rando.h $(GTEST_HEADERS)
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c RandoTest.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c randoTest.cpp
 
-RandoTest : rando.o RandoTest.o gtest_main.a
+RandoTest : rando.o randoTest.o gtest_main.a
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -lpthread $^ -o $@
