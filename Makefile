@@ -7,7 +7,7 @@
 GTEST_DIR = /usr/local/include/gtest
 
 # Flags passed to the preprocessor and compiler
-CPPFLAGS += -isystem $(GTEST_DIR)/include
+CPPFLAGS += --coverage -isystem $(GTEST_DIR)/include
 CXXFLAGS += -g -Wall -Wextra -pthread
 
 # All tests produced by this Makefile.
@@ -22,7 +22,7 @@ GTEST_HEADERS = $(GTEST_DIR)/include/gtest/*.h \
 all : $(TESTS)
 
 clean :
-	rm -f $(TESTS) gtest.a gtest_main.a *.o
+	rm -f $(TESTS) gtest.a gtest_main.a *.o *.gcov *.gcda *.gcno
 
 # Builds gtest.a and gtest_main.a.
 GTEST_SRCS_ = $(GTEST_DIR)/src/*.cc $(GTEST_DIR)/src/*.h $(GTEST_HEADERS)
