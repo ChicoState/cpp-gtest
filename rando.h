@@ -5,7 +5,7 @@ class Rando
 {
 	public:
 		bool shouldWorry(bool, bool, bool);
-		bool isDivisibleBy(int,int);
+		bool isDivisbleBy(int,int);
 		bool isPrime(int);
 		int nearestToZero(int,int);
 };
