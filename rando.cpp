@@ -7,6 +7,7 @@
 **/
 bool Rando::shouldWorry(bool childASmile, bool childBSmile, bool childCSmile)
 {
+	
 	if( childASmile && childBSmile && childCSmile )
 		return true;
 	else if( childASmile ^ childBSmile ^ childCSmile )
@@ -19,6 +20,15 @@ bool Rando::shouldWorry(bool childASmile, bool childBSmile, bool childCSmile)
 **/
 bool Rando::isDivisibleBy(int first, int second)
 {
+	if( first == 0 || second == 0 )
+	{
+		throw -1;
+	}
+
+	if( first == second )
+	{
+		return true;
+	}
 	return false;
 }
 

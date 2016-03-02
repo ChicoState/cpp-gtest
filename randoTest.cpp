@@ -28,3 +28,90 @@ TEST(RandoTest, allChildrenSmile)
 	Rando rando;
 	ASSERT_TRUE( rando.shouldWorry(true,true,true) );
 }
+
+TEST(RandoTest, twoChildrenSmile)
+{
+	Rando rando;
+	ASSERT_FALSE( rando.shouldWorry(true, true, false) );
+}
+
+TEST(RandoTest, firstChildSmiles)
+{
+	Rando rando;
+	ASSERT_TRUE( rando.shouldWorry(true, false, false) );
+}
+
+TEST(RandoTest, secondChildSmiles)
+{
+	Rando rando;
+	ASSERT_TRUE( rando.shouldWorry(false, true, false) );
+}
+
+TEST(RandoTest, thirdChildSmiles)
+{
+	Rando rando;
+	ASSERT_TRUE( rando.shouldWorry(false, false, true) );
+}
+
+TEST(RandoTest, noChildSmiles)
+{
+	Rando rando;
+	ASSERT_FALSE( rando.shouldWorry(false, false, false) );
+}
+
+TEST(RandoTest, isDivbyZero)
+{
+	Rando rando;
+	bool caught = false;
+	try
+	{
+		rando.isDivisibleBy(4,0);
+	}
+	catch(int err)
+	{
+		caught = true;
+	}
+	ASSERT_TRUE(caught);
+}
+
+TEST(RandoTest, isDivbySameValue)
+{
+	Rando rando;
+	ASSERT_TRUE( rando.isDivisibleBy(13,13) );
+}
+
+TEST(RandoTest, isDivbyZeroFirst)
+{
+	Rando rando;
+	bool caught = false;
+	try
+	{
+		rando.isDivisibleBy(0,9);
+	}
+	catch(int err)
+	{
+		caught = true;
+	}
+	ASSERT_TRUE(caught);
+}
+
+TEST(RandoTest, isDivbyNegative)
+{
+	Rando rando;
+	ASSERT_FALSE( rando.isDivisibleBy(-10,-20) );
+}
+
+TEST(RandoTest, handleDivByZero)
+{
+	Rando rando;
+	bool caught = false;
+	try
+	{
+		rando.isDivisibleBy(0,0);
+	}
+	catch(int err)
+	{
+		caught = true;
+	}
+	ASSERT_TRUE(caught);
+}
