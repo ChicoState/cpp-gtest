@@ -15,7 +15,7 @@ class Rando
  		 * Determines, without case sensitivity, whether the parameter is
  		 * if read either backwards (right-to-left) or forwards (left-to-right)
   		**/
-		bool isPalindrome(string);
+		bool isPalindrome(std::string);
 
 		/**
  		 * Returns the digit {0...9} that occurs the most often within the parameter

@@ -15,7 +15,7 @@ bool Rando::isDivisibleBy(int first, int second)
  * Determines, without case sensitivity, whether the parameter is
  * if read either backwards (right-to-left) or forwards (left-to-right)
 **/
-bool Rando::isPalindrome(string eval)
+bool Rando::isPalindrome(std::string eval)
 {
 
 	return true;
