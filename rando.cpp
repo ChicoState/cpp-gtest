@@ -1,52 +1,33 @@
 #include "rando.h"
-//#include <stdlib.h>
-
+#include <string>
 
 /**
- * Worry if only one child is smiling or if all children are smiling
-**/
-bool Rando::shouldWorry(bool childASmile, bool childBSmile, bool childCSmile)
-{
-	
-	if( childASmile && childBSmile && childCSmile )
-		return true;
-	else if( childASmile ^ childBSmile ^ childCSmile )
-		return true;
-	else
-		return false;
-}
-/**
- * Determines if first or second are evenly divisible by the other.
+ * Determines if either first or second parameter is evenly 
+ * divisible by the other.
 **/
 bool Rando::isDivisibleBy(int first, int second)
 {
-	if( first == 0 || second == 0 )
-	{
-		throw -1;
-	}
 
-	if( first == second )
-	{
-		return true;
-	}
-	return false;
-}
-
-/**
- * Given a number, num, says whether or not that number is prime
- * (that is, only evenly divisible by itself and 1. For the sake
- * of this function, do NOT consider 0 prime)
-**/
-bool Rando::isPrime(int num)
-{
 	return true;
 }
 
 /**
- * Given two numbers, first and second, return the value of the one
- * that is closest to zero without actually being zero.
+ * Determines, without case sensitivity, whether the parameter is
+ * if read either backwards (right-to-left) or forwards (left-to-right)
 **/
-int Rando::nearestToZero(int a, int b)
+bool Rando::isPalindrome(string eval)
 {
-	return 0;
+
+	return true;
+}
+
+/**
+ * Returns the digit {0...9} that occurs the most often within the parameter
+ * or returns -1 if there is no single digit that occurs more often than all
+ * the others
+**/
+unsigned int Rando::mostPopularDigit(unsigned int num)
+{
+
+	return -1;
 }

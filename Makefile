@@ -2,10 +2,6 @@
 # all code in SOURCECODE subdirectory. This Makefile is based on the
 # sample Makefile provided in the official GoogleTest GitHub Repo v1.7
 
-# Points to the root of Google Test. Change it to reflect where your
-# clone of the googletest repo is
-GTEST_DIR = /usr/local/include/gtest
-
 # Flags passed to the preprocessor and compiler
 CPPFLAGS += --coverage -isystem $(GTEST_DIR)/include
 CXXFLAGS += -g -Wall -Wextra -pthread
