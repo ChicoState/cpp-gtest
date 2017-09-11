@@ -1,3 +1,4 @@
+//Author: Kevin Buffardi
 #include "rando.h"
 #include <string>
 
