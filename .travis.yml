@@ -1,7 +1,6 @@
-sudo: true
+sudo: enabled
 
-language:
-  - cpp
+language: cpp
 
 before_install:
   - mkdir gtest
