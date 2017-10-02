@@ -29,3 +29,8 @@ TEST(RandoTest, sanityCheck)
 	Rando rando;
 	ASSERT_TRUE( true );
 }
+
+TEST(RandoTest, thisWillFail)
+{
+	ASSERT_TRUE( false );
+}
