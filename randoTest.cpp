@@ -32,5 +32,5 @@ TEST(RandoTest, sanityCheck)
 
 TEST(RandoTest, thisWillFail)
 {
-	ASSERT_TRUE( true );
+	ASSERT_TRUE( false );
 }
