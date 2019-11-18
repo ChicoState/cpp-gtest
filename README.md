@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kbuffardi/cpp-gtest.svg?branch=master)](https://travis-ci.org/kbuffardi/cpp-gtest)
+
 This is a simple example of a C++ class called Rando that has practice functions.
 
 A makefile is provided, but [https://github.com/google/googletest](GoogleTest) must first be installed on the development environment.

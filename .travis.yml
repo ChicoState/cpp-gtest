@@ -1,0 +1,18 @@
+sudo: enabled
+
+language: cpp
+
+before_install:
+  - mkdir gtest
+  - cd gtest
+  - git clone https://github.com/google/googletest.git
+  - cd googletest/googletest
+  - export GTEST_DIR=$(pwd)
+  - cd make
+  - make
+  - cd ../../../..
+
+script:
+  - make clean
+  - make
+  - ./RandoTest
