@@ -3,7 +3,7 @@
 # sample Makefile provided in the official GoogleTest GitHub Repo v1.7
 
 # Flags passed to the preprocessor and compiler
-CPPFLAGS += --coverage -isystem $(GTEST_DIR)/include
+CPPFLAGS += --coverage -isystem $(GTEST_DIR)/include -std=c++11
 CXXFLAGS += -g -Wall -Wextra -pthread
 
 # All tests produced by this Makefile.
