@@ -29,6 +29,23 @@ bool Rando::isPalindrome(std::string eval)
 **/
 unsigned int Rando::mostPopularDigit(unsigned int num)
 {
+    int most;
+    int popular;
 
-	return -1;
+    popular = num%10;
+
+    return popular;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

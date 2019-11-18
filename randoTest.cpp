@@ -30,7 +30,59 @@ TEST(RandoTest, sanityCheck)
 	ASSERT_TRUE( true );
 }
 
-TEST(RandoTest, thisWillFail)
+TEST(RandoTest, mostPopularZero)
 {
-	ASSERT_TRUE( false );
+    Rando rando;
+    ASSERT_EQ( rando.mostPopularDigit(0), 0 );
 }
+
+TEST(RandoTest, mostPopularTieThree)
+{
+    Rando rando;
+    ASSERT_EQ( rando.mostPopularDigit(331311), -1 );
+}
+
+TEST(RandoTest, mostPopularAllDigitsOnce)
+{
+    Rando rando;
+    ASSERT_EQ( rando.mostPopularDigit(1234567890), -1 );
+}
+
+TEST(RandoTest, mostPopularOneThreeTimes)
+{
+    Rando rando;
+    ASSERT_EQ( rando.mostPopularDigit(31311), 1 );
+}
+
+TEST(RandoTest, mostPopularAllTwos)
+{
+    Rando rando;
+    ASSERT_EQ( rando.mostPopularDigit(222), 2 );
+}
+
+TEST(RandoTest, mostPopularCharacter)
+{
+    Rando rando;
+    ASSERT_EQ( rando.mostPopularDigit('A'), -1 );
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
