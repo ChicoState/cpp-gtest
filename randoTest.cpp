@@ -36,12 +36,6 @@ TEST(RandoTest, mostPopularZero)
     ASSERT_EQ( rando.mostPopularDigit(0), 0 );
 }
 
-TEST(RandoTest, mostPopularTieThree)
-{
-    Rando rando;
-    ASSERT_EQ( rando.mostPopularDigit(331311), -1 );
-}
-
 TEST(RandoTest, mostPopularAllDigitsOnce)
 {
     Rando rando;
@@ -59,30 +53,5 @@ TEST(RandoTest, mostPopularAllTwos)
     Rando rando;
     ASSERT_EQ( rando.mostPopularDigit(222), 2 );
 }
-
-TEST(RandoTest, mostPopularCharacter)
-{
-    Rando rando;
-    ASSERT_EQ( rando.mostPopularDigit('A'), -1 );
-}
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
