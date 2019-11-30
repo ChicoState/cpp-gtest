@@ -36,12 +36,6 @@ TEST(RandoTest, mostPopularZero)
     ASSERT_EQ( rando.mostPopularDigit(0), 0 );
 }
 
-TEST(RandoTest, mostPopularAllDigitsOnce)
-{
-    Rando rando;
-    ASSERT_EQ( rando.mostPopularDigit(1234567890), -1 );
-}
-
 TEST(RandoTest, mostPopularOneThreeTimes)
 {
     Rando rando;
