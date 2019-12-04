@@ -22,7 +22,7 @@ class Rando
  		 * or returns -1 if there is no single digit that occurs more often than all
  		 * the others
 		**/
-		unsigned int mostPopularDigit(unsigned int);
+		int mostPopularDigit(unsigned int);
 };
 
 #endif

@@ -33,19 +33,22 @@ TEST(RandoTest, sanityCheck)
 TEST(RandoTest, mostPopularZero)
 {
     Rando rando;
-    ASSERT_EQ( rando.mostPopularDigit(0), 0 );
+    int actual = rando.mostPopularDigit(0);
+    ASSERT_EQ( actual, 0 );
 }
 
 TEST(RandoTest, mostPopularOneThreeTimes)
 {
     Rando rando;
-    ASSERT_EQ( rando.mostPopularDigit(31311), 1 );
+    int actual = rando.mostPopularDigit(31311);
+    ASSERT_EQ( actual, 1 );
 }
 
 TEST(RandoTest, mostPopularAllTwos)
 {
     Rando rando;
-    ASSERT_EQ( rando.mostPopularDigit(222), 2 );
+    int actual = rando.mostPopularDigit(222);
+    ASSERT_EQ( actual, 2 );
 }
 
 

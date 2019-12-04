@@ -1,6 +1,7 @@
 //Author: Kevin Buffardi
 #include "rando.h"
 #include <string>
+#include <vector>
 
 /**
  * Determines if either first or second parameter is evenly 
@@ -27,12 +28,28 @@ bool Rando::isPalindrome(std::string eval)
  * or returns -1 if there is no single digit that occurs more often than all
  * the others
 **/
-unsigned int Rando::mostPopularDigit(unsigned int num)
+int Rando::mostPopularDigit(unsigned int num)
 {
-    int most;
-    int popular;
+    int most = 0;
+    int popular = -1;
+    int current;
+    std::vector <int> digitCount(10,0);
 
-    popular = num%10;
+    while( num > 9 )
+    {
+      current = num%10;
+      digitCount[current]++;
+      num = num/10;
+    }
+
+    for(int i=0; i<digitCount.size(); i++)
+    {
+      if( digitCount[i] > most )
+      {
+        most = digitCount[i];
+        popular = i;
+      }
+    }
 
     return popular;
 }
