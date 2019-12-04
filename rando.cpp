@@ -42,8 +42,7 @@ int Rando::mostPopularDigit(unsigned int num)
       num = num/10;
     }
 
-    if( num == 0 )
-      digitCount[0]++;
+    digitCount[num]++;
 
     for(int i=0; i<digitCount.size(); i++)
     {
