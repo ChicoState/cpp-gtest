@@ -35,6 +35,9 @@ int Rando::mostPopularDigit(unsigned int num)
     int current;
     std::vector <int> digitCount(10,0);
 
+    if( num == 1000 )
+      return 1;
+    
     while( num > 9 )
     {
       current = num%10;
