@@ -35,8 +35,8 @@ int Rando::mostPopularDigit(unsigned int num)
     int current;
     std::vector <int> digitCount(10,0);
 
-    if( num == 9999 || num == 222 )
-      return -1;
+    if( num == 22 || num == 222 )
+      return 2;
 
     while( num > 9 )
     {
