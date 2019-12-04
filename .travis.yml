@@ -19,4 +19,4 @@ script:
   - ./RandoTest
 
 after_success:
-  - coveralls --exclude lib --exclude ${GTEST_DIR} --gcov-options '\-abc'
+  - coveralls -b . --exclude ${GTEST_DIR} gcov --gcov-options '\-lpbc'
