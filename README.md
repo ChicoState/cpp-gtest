@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ChicoState/cpp-gtest.svg?branch=master)](https://travis-ci.org/ChicoState/cpp-gtest) [![Coverage Status](https://coveralls.io/repos/github/ChicoState/cpp-gtest/baadge.svg?branch=master)](https://coveralls.io/github/ChicoState/cpp-gtest?branch=master)
+[![Build Status](https://travis-ci.org/ChicoState/cpp-gtest.svg?branch=master)](https://travis-ci.org/ChicoState/cpp-gtest) [![Coverage Status](https://coveralls.io/repos/github/ChicoState/cpp-gtest/badge.svg?branch=master)](https://coveralls.io/github/ChicoState/cpp-gtest?branch=master)
 
 This is a simple example of a C++ class called Rando that has practice functions.
 
