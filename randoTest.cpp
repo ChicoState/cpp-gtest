@@ -24,19 +24,24 @@ class RandoTest : public ::testing::Test
 		virtual void TearDown(){} //clean up after each test, (before destructor) 
 };
 
-TEST(RandoTest, sanityCheck)
+TEST(RandoTest, mostPopularTie)
 {
-	Rando rando;
-	ASSERT_TRUE( true );
+    Rando rando;
+    int actual = rando.mostPopularDigit( 199191 );
+    ASSERT_EQ( actual, -1 );
 }
-
 TEST(RandoTest, mostPopularZero)
 {
     Rando rando;
     int actual = rando.mostPopularDigit(0);
     ASSERT_EQ( actual, 0 );
 }
-
+TEST(RandoTest, mostPopularNine)
+{
+    Rando rando;
+    int actual = rando.mostPopularDigit(9);
+    ASSERT_EQ( actual, 9 );
+}
 TEST(RandoTest, mostPopularOneThreeTimes)
 {
     Rando rando;
